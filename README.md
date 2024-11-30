@@ -47,5 +47,6 @@ Ensure you have the following installed:
    ros2 service call /Color_BnW_Switch example_interfaces/srv/SetBool "data: false"
    ros2 service call /Color_BnW_Switch example_interfaces/srv/SetBool "data: true"
 ```
+It will be in grayscale initially; the user can choose grayscale by requesting the data as false or a coloured image by requesting the data as true. 
 
 Here, the camera_topic can be varied, but the input_topic should be the same as the camera_topic but with "/image_raw" added to the camera_topic. output_topic can be varied by the user.
